@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Resume</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+      transition: background-color 0.3s, color 0.3s;
+    }
+    .dark-mode {
+      background-color: #121212;
+      color: #eee;
+    }
+    .container {
+      max-width: 800px;
+      margin: auto;
+      background: white;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      border-radius: 10px;
+      margin-top: 30px;
+    }
+    .dark-mode .container {
+      background: #1e1e1e;
+      box-shadow: 0 0 10px rgba(255,255,255,0.1);
+    }
+    img {
+      width: 150px;
+      border-radius: 50%;
+      display: block;
+      margin: auto;
+    }
+    h1, h2 {
+      text-align: center;
+    }
+    .section {
+      margin-top: 30px;
+    }
+    .separator {
+      height: 3px;
+      background: linear-gradient(90deg, #00bfff, #1e90ff);
+      border: none;
+      margin: 20px 0;
+    }
+    .toggle-darkmode {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      background: #00bfff;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    .toggle-darkmode:hover {
+      background: #1e90ff;
+    }
+  </style>
+</head>
+<body>
+  <button class="toggle-darkmode" onclick="toggleDarkMode()">Toggle Dark Mode</button>
+
+  <div class="container">
+    <img src="profile_github.png" alt="Profile Picture">
+    <h1>Sachin kumar</h1>
+    <p style="text-align:center;">onlinebeat406@gmail.com | +91-XXXXXXXXXX | SGNR, Rajasthan</p>
+
+    <hr class="separator">
+    <div class="section">
+      <h2>Goals</h2>
+      <p>I aim to build impactful solutions through technology, AI, and innovation.
+I’m actively learning competitive programming and cybersecurity analysis to strengthen my problem-solving skills.
+My goal is to contribute meaningfully in AI, security, and real-world digital advancements.</p>
+    </div>
+
+    <hr class="separator">
+    <div class="section">
+      <h2>Experience/Projects</h2>
+      <p>Worked on multiple academic and freelance projects involving Python, web development, and AWS cloud fundamentals.
+Built several projects as part of courses and training programs, though many can't be showcased due to their terms and conditions.
+Planning to add many more personal and open-source projects in the near future to demonstrate my growing skill set.</p>
+    </div>
+
+    <hr class="separator">
+    <div class="section">
+      <h2>Skills</h2>
+      <p>Proficient in HTML, CSS, C, and Python with solid understanding of Linux systems and AWS cloud services.
+Skilled at building web interfaces, automating tasks, and deploying solutions efficiently with strong problem-solving abilities.</p>
+    </div>
+
+    <hr class="separator">
+    <div class="section">
+      <h2>Education</h2>
+      <p>I chose to drop out of college as the education offered in my tier-3 city didn’t match my aspirations.
+Instead, I committed to learning from the world’s best institutions through online courses from Harvard, Stanford, and beyond.
+From CS50 programs to numerous specialised courses, I continue building projects to enhance my skills every single day.</p>
+    </div>
+  </div>
+
+  <script>
+    function toggleDarkMode() {
+      document.body.classList.toggle('dark-mode');
+    }
+  </script>
+</body>
+</html>
+

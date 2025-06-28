@@ -1,3 +1,3 @@
 # resume
 
-my resume page. :)
+my resume page :)
